@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EDUCATIONAL DETAILS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s ease; 
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        
+        nav a[href="#home"] {
+            background-color: blue;
+        }
+        nav a[href="#education"] {
+            background-color: green;
+        }
+        nav a[href="#progress"] {
+            background-color: orange;
+        }
+        nav a[href="#Contact"] {
+            background-color: purple;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        section {
+            display: none;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        section.active {
+            display: block;
+        }
+
+        
+        #home {
+            position: relative;
+            color: black;
+            min-height: 300px;
+            z-index: 1;
+        }
+        #home::before {
+            content: "";
+            background: url("IMG_1430.JPG") no-repeat center center;
+            background-size: cover;
+            opacity: 0.15;
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: -1;
+            border-radius: 10px;
+        } #education::before {
+            content: "";
+            background: url("IMG_1430.JPG") no-repeat center center;
+            background-size: cover;
+            opacity: 0.15;
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: -1;
+            border-radius: 10px;
+        } #progress::before {
+            content: "";
+            background: url("IMG_1430.JPG") no-repeat center center;
+            background-size: cover;
+            opacity: 0.15;
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: -1;
+            border-radius: 10px;
+        } #Contact::before {
+            content: "";
+            background: url("IMG_1430.JPG") no-repeat center center;
+            background-size: cover;
+            opacity: 0.15;
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: -1;
+            border-radius: 10px;
+        }
+        .highlight {
+            font-style: italic;
+            font-weight: bold;
+            color: darkblue;
+        }
+
+       
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 10px 0;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        caption {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#education">Education details</a>
+    <a href="#progress">Progress</a>
+    <a href="#Contact">Contact</a>
+</nav>
+
+<section id="home">
+    <p>Hi</p>    
+    <p><span>Welcome!</span> This is my education tracker.</p>
+    <p>My name is <span class="highlight">Muhammad Sarmad Mirza</span>!</p>
+    <p>Click on the upper attached links to change!</p>
+</section>
+
+<section id="education">
+    <table>
+        <caption>MY EDUCATIONAL DETAILS</caption>
+        <tr>
+            <th>Degree/course</th>
+            <th>Institution</th>
+            <th>Year</th>
+            <th>Semester</th>
+            <th>SGPA</th>
+            <th>CGPA</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>Software engineering</td>
+            <td>University of Central Punjab</td>
+            <td>2024-2028</td>
+            <td>First</td>
+            <td>3.93</td>
+            <td>3.93</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Software engineering</td>
+            <td>University of Central Punjab</td>
+            <td>2024-2028</td>
+            <td>Second</td>
+            <td>4.0</td>
+            <td>3.97</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Web development</td>
+            <td>COURSERA (online)</td>
+            <td>14 August 2025</td>
+            <td>Completed</td>
+            <td>Undefined</td>
+            <td>Undefined</td>
+            <td>93.2%</td>
+        </tr>
+        <tr>
+            <td>Cyber security Certificate</td>
+            <td>COURSERA (online)</td>
+            <td>In progress</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+    </table>
+</section>
+
+<section id="progress">
+    <table>
+        <tr>
+            <th>SERIAL NUMBER</th>
+            <th>Degree/course</th>
+            <th>University/institution</th>
+            <th>Year</th>
+            <th>Progress</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Matric</td>
+            <td>FGS</td>
+            <td>2022</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Intermediate</td>
+            <td>PGC</td>
+            <td>2024</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Web Development (HTML)</td>
+            <td>COURSERA</td>
+            <td>2025</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Software Engineering</td>
+            <td>UCP</td>
+            <td>2024-2028</td>
+            <td>In progress</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Cybersecurity</td>
+            <td>COURSERA</td>
+            <td>Soon</td>
+            <td>In progress</td>
+        </tr>
+    </table>
+</section>
+
+<section id="Contact">
+    <ul>
+        <li>📞 Phone Number: 0346-4448888</li>
+        <li>📧 Email: sarmadmirza8888@gmail.com</li>
+    </ul>
+</section>
+
+<script>
+const links = document.querySelectorAll('nav a');
+const sections = document.querySelectorAll('section');
+const body = document.body;
+
+links.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+
+    // Show only the clicked section
+    sections.forEach(sec => sec.classList.remove('active'));
+    target.classList.add('active');
+
+    // ✅ Change background color based on section
+    switch(link.getAttribute('href')) {
+      case "#home":
+        body.style.backgroundColor = "lightblue";
+        break;
+      case "#education":
+        body.style.backgroundColor = "lightgreen";
+        break;
+      case "#progress":
+        body.style.backgroundColor = "lightyellow";
+        break;
+      case "#Contact":
+        body.style.backgroundColor = "lavender";
+        break;
+    }
+  });
+});
+
+// Default active section
+document.querySelector('#home').classList.add('active');
+body.style.backgroundColor = "lightblue"; // default
+</script>
+
+</body>
+</html>
