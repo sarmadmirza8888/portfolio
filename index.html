@@ -2,14 +2,28 @@
 <html>
 <head>
     <title>EDUCATIONAL DETAILS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        section {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  background: white;
+}
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             transition: background-color 0.5s ease; 
         }
-
+section {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+section.active {
+  opacity: 1;
+}
         nav {
             display: flex;
             justify-content: center;
@@ -244,10 +258,12 @@
 </section>
 
 <section id="Contact">
-    <ul>
-        <li>📞 Phone Number: 0346-4448888</li>
-        <li>📧 Email: sarmadmirza8888@gmail.com</li>
-    </ul>
+  <ul>
+    <li>📞 <a href="tel:+923464448888">0346-4448888</a></li>
+    <li>📧 <a href="mailto:sarmadmirza8888@gmail.com">sarmadmirza8888@gmail.com</a></li>
+    <li>🌐 <a href="https://github.com/sarmadmirza8888" target="_blank">GitHub</a></li>
+    <li>🔗 <a href="https://www.linkedin.com/in/muhammad-sarmad-mirza-1a1a66381/" target="_blank">LinkedIn</a></li>
+  </ul>
 </section>
 
 <script>
@@ -285,6 +301,7 @@ links.forEach(link => {
 
 document.querySelector('#home').classList.add('active');
 body.style.backgroundColor = "lightblue"; // default
+
 </script>
 
 </body>
