@@ -62,16 +62,8 @@
             min-height: 300px;
             z-index: 1;
         }
-        #home::before {
-            content: "";
-            background: url("IMG_1430.JPG") no-repeat center center;
-            background-size: cover;
-            opacity: 0.15;
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            z-index: -1;
-            border-radius: 10px;
-        } #education::before {
+        
+         #education::before {
             content: "";
             background: url("IMG_1430.JPG") no-repeat center center;
             background-size: cover;
@@ -120,6 +112,7 @@
             font-weight: bold;
             margin-bottom: 8px;
         }
+        
     </style>
 </head>
 <body>
@@ -136,6 +129,20 @@
     <p><span>Welcome!</span> This is my education tracker.</p>
     <p>My name is <span class="highlight">Muhammad Sarmad Mirza</span>!</p>
     <p>Click on the upper attached links to change!</p>
+       <img src="IMG_1430.JPG" alt="My Photo" class="home-pic">
+       <style>
+        .home-pic{
+ position: absolute;   
+    top: 10px;          
+    right: 10px;          
+    width: 120px;        
+    height: auto;        
+    border-radius: 12px;  
+    border: 2px solid black; 
+}
+        
+       </style>
+     
 </section>
 
 <section id="education">
@@ -253,11 +260,11 @@ links.forEach(link => {
     e.preventDefault();
     const target = document.querySelector(link.getAttribute('href'));
 
-    // Show only the clicked section
+    
     sections.forEach(sec => sec.classList.remove('active'));
     target.classList.add('active');
 
-    // ✅ Change background color based on section
+    
     switch(link.getAttribute('href')) {
       case "#home":
         body.style.backgroundColor = "lightblue";
@@ -275,12 +282,10 @@ links.forEach(link => {
   });
 });
 
-// Default active section
+
 document.querySelector('#home').classList.add('active');
 body.style.backgroundColor = "lightblue"; // default
 </script>
 
 </body>
 </html>
-
-
